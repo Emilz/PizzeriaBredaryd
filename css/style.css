@@ -93,7 +93,7 @@ td {
 }
 
 .familj {
-	margin-top: 20px;
+	margin-top: 20px !important;
 	border-color: #990033;
 	border-radius: 15px;
 	text-align: center;
