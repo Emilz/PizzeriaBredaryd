@@ -1,0 +1,124 @@
+body {
+	padding-top: 70px;
+	background-color: #eee;
+}
+
+hr {
+	border-top: dotted 1px;
+}
+
+table {
+	width: 100%;
+}
+
+.table-striped {
+}
+
+.table-striped>tbody>tr:nth-child(odd){
+   background-color: #ADADAD;
+}
+
+td {
+	display: inline;
+}
+
+.dag {
+	float: left;
+}
+
+.price, .tid {
+	float: right;
+}
+
+.open {
+	height: 20px;
+	border-bottom: 1px dotted #ccc;
+	margin-bottom: 10px;
+}
+
+.menu-header {
+	color: white;
+	background-color: #990033;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding-left: 10%;
+	margin-top: 8px;
+}
+
+.menu-item {
+	color: #990033;
+}
+
+.heading-box {
+	background-color: #990033;
+	border-radius: 10px;
+	color: white;
+	width: auto;
+
+}
+
+.jumbotron {
+	color: white;
+	background-color: #990033;
+	text-align: center;
+}
+
+.foot {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.box1, .box2 {
+	border-radius: 10px;
+	color: white;
+	background-color: #990033;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.container-open {
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+	background-color: #990033;
+	margin-bottom: 10px;
+	padding: 10px 10px 10px 10px;
+}
+
+/* Prevents slides from flashing */
+#slides {
+  display:none;
+}
+
+.familj {
+	margin-top: 20px;
+	border-color: #990033;
+	border-radius: 15px;
+	text-align: center;
+	border: 2px solid #990033;
+	margin: auto;
+	padding-top: 16px;
+}
+
+.extra {
+	margin-top: 20px;
+	padding-top: 16px;
+	border-color: #333;
+	border-radius: 15px;
+	text-align: center;
+	border: 2px solid #333;
+}
+
+.phone-number {
+	color: white;
+}
+
+.phone-number:focus {
+	color: white;
+}
+
+.phone-number:hover {
+	color: white;
+}
