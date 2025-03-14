@@ -8,8 +8,8 @@ const output = 'css/styles.min.css';
 
 (async () => {
     const purgeCSSResult = await new PurgeCSS().purge({
-        content: content,
-        css: css,
+        content,
+        css,
         safelist: {
             standard: ['slidesjs'],
             deep: [/^#slides/, /slidesjs/]
@@ -21,8 +21,6 @@ const output = 'css/styles.min.css';
     const minifiedCSS = new CleanCSS().minify(combinedCSS).styles;
 
     fs.writeFileSync(output, minifiedCSS);
-
-    console.log(`Purged and minified CSS saved to: ${output}`);
 })();
 
 //run: node purge.js
