@@ -1,5 +1,6 @@
 {
-  "dependencies": {
-    "purify-css": "^1.2.5"
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "purgecss": "^7.0.2"
   }
 }
