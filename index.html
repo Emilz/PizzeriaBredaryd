@@ -9,13 +9,7 @@
     <meta name="author" content="Emil Johansson">
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Pizzeria &amp; Restaurang Bredaryd</title>
-    <link href="css/styles.min.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -71,13 +65,18 @@
             </div>
         </div>
 
-        <div id="slides">
-            <img src="images/1.jpg" alt="Hakan Agirman" />
-            <img src="images/2.jpg" alt="pizza"/>
-            <img src="images/3.jpg" alt="Hakan Agirman"/>
-            <img src="images/4.jpg" alt="Uteservering"/>
-            <img src="images/5.jpg" alt="Bord inne"/>
-            <img src="images/6.jpg" alt="Skylt - pizza, kebab, sallad"/>
+        <div id="slides" role="region" aria-roledescription="karusell" aria-label="Bilder från restaurangen">
+            <div class="slideshow-viewport">
+                <div class="slideshow-track">
+                    <img src="images/1.jpg" alt="Hakan Agirman" />
+                    <img src="images/2.jpg" alt="pizza" aria-hidden="true"/>
+                    <img src="images/3.jpg" alt="Hakan Agirman" aria-hidden="true"/>
+                    <img src="images/4.jpg" alt="Uteservering" aria-hidden="true"/>
+                    <img src="images/5.jpg" alt="Bord inne" aria-hidden="true"/>
+                    <img src="images/6.jpg" alt="Skylt - pizza, kebab, sallad" aria-hidden="true"/>
+                </div>
+            </div>
+            <div class="slideshow-pagination" role="group" aria-label="Välj bild" hidden></div>
         </div>
 
 
@@ -763,17 +762,6 @@
             <p class="foot">Copyright © Bredaryds Pizzeria - <span id="currentYear"></span></p>
         </footer>
     </div>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.slides.min.js"></script>
-    <script>
-        document.getElementById("currentYear").innerText = new Date().getFullYear();
-        $(function () {
-            $("#slides").slidesjs({
-                width: 940,
-                height: 528
-            });
-        });
-    </script>
+    <script src="js/site.js"></script>
 </body>
 </html>
